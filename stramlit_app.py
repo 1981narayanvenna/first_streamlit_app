@@ -51,4 +51,4 @@ streamlit.write('Thanks for adding ', fruit_choice2)
 
 my_cur.execute("insert into fruit_load_list values ('from streamlit')")
 
-stramlit.stop()
+#stramlit.stop()
