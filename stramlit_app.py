@@ -19,8 +19,7 @@ fruits_selected=streamlit.multiselect("Pick some fruits:", list(my_fruit_list.Fr
 #fruits_to_show = my_fruit_list.filter(Fruit=['Avocado','Strawberries'])
 
 # Display the table on the page.
-streamlit.dataframe(my_fruit_list).filter(Fruit=['Avocado','Strawberries'])
-
+streamlit.dataframe(my_fruit_list)
 
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 streamlit.text(fruityvice_response)
